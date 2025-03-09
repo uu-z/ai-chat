@@ -1,61 +1,61 @@
-# AI 效率产品 MVP - 多智能体聊天平台
+# AI Efficiency Product MVP - multi-agent chat platform
 
-这是一个基于 React 的 AI 效率产品 MVP，实现了多智能体聊天平台功能。用户可以与主智能体对话，系统会自动创建聊天群组并添加合适的 AI 助手，基于元提示词(meta prompt)生成回答。
+This is a React-based AI efficiency product MVP that implements multi-agent chat platform functions. Users can talk to the main agent, and the system automatically creates chat groups and adds appropriate AI assistants to generate responses based on meta prompt words.
 
-## 核心功能
+## Core functions
 
-1. **自动群聊创建**：用户发送消息后，系统自动创建群聊并添加合适的 AI 助手
-2. **智能体自动选择**：基于用户消息内容，自动选择最合适的 AI 助手
-3. **多智能体协作**：多个 AI 助手在群聊中协作回答问题，各自基于自己的专长和元提示词
-4. **智能体商店**：用户可以浏览、安装和管理各种专业领域的 AI 助手
-5. **自定义智能体**：用户可以创建和自定义自己的 AI 助手，设置专属元提示词
+1. ** Automatic group chat creation ** : After the user sends a message, the system automatically creates a group chat and adds a suitable AI assistant
+2. ** Automatic selection of agents ** : Automatically selects the most appropriate AI assistant based on the user's message content
+3. ** Multi-Agent collaboration ** : Multiple AI assistants collaborate to answer questions in a group chat, each based on their own expertise and meta prompt words
+4. ** Agent Store ** : Users can browse, install and manage AI assistants in various professional areas
+5. ** Custom Agents ** : Users can create and customize their own AI assistant and set exclusive meta prompt words
 
-## 技术实现
+## Technical implementation
 
-- **React + TypeScript**：前端框架和类型系统
-- **TailwindCSS**：UI 样式
-- **高内聚低耦合**：组件化设计，职责分明
-- **状态管理**：使用 React Hooks 管理应用状态
+- **React + TypeScript** : Front-end framework and type system
+- **TailwindCSS** : UI style
+- ** High cohesion low coupling ** : component-based design, clear responsibilities
+- ** State Management ** : Use React Hooks to manage application state
 
-## 项目结构
+## Project structure
 
-```
+` ` `
 src/
-├── components/        # UI组件
-├── data/              # 模拟数据
-├── types/             # TypeScript类型定义
-└── utils/             # 工具函数
-```
+├── components/ # UI components
+├── data/ # Simulate data
+├── types/ # TypeScript Type definitions
+└── utils/ # utility functions
+` ` `
 
-## 智能体系统
+## Agent system
 
-系统中的每个 AI 助手都有以下特性：
+Each AI assistant in the system has the following characteristics:
 
-- **元提示词(Meta Prompt)**：定义助手的回答风格和专长
-- **类别(Category)**：所属专业领域
-- **标签(Tags)**：关键词标签，用于智能匹配
-- **描述(Description)**：助手功能描述
+- ** Meta Prompt ** : Defines the assistant's answer style and expertise
+- ** Category ** : Field of expertise
+- ** Tags ** : Keyword tags for intelligent matching
+- ** Description ** : Description of the assistant functions
 
-## 自动匹配算法
+## Automatic matching algorithm
 
-当用户发送消息时，系统会：
+When a user sends a message, the system will:
 
-1. 提取用户消息中的关键词
-2. 计算每个 AI 助手与关键词的匹配度
-3. 选择匹配度最高的几个助手加入群聊
-4. 每个助手基于自己的元提示词生成回答
+1. Extract keywords from user messages
+2. Calculate the match degree between each AI assistant and keywords
+3. Select the most matched assistants to join the group chat
+4. Each assistant generates a response based on its own meta prompt words
 
-## 使用方法
+## How to use
 
-1. 用户发送消息，系统自动创建群聊并添加合适的 AI 助手
-2. 用户可以手动添加或移除群聊中的 AI 助手
-3. 通过智能体商店安装新的 AI 助手
-4. 通过智能体管理器创建和自定义 AI 助手
+1. The user sends a message, and the system automatically creates a group chat and adds an appropriate AI assistant
+2. Users can manually add or remove AI assistants in group chats
+3. Install the new AI assistant through the Agent Store
+4. Create and customize AI assistants through the Agent Manager
 
-## 未来规划
+## Future planning
 
-1. 接入真实的 AI API，实现真正的智能回答
-2. 添加更多专业领域的 AI 助手
-3. 实现智能体之间的协作机制
-4. 添加用户反馈和智能体评分系统
-5. 支持更复杂的多轮对话和上下文理解
+1. Access real AI apis to achieve real intelligent answers
+2. Add AI assistants in more specialized areas
+3. Implement the cooperation mechanism between agents
+4. Add user feedback and agent rating system
+5. Support more complex multi-round conversations and context understanding
